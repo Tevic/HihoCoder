@@ -16,7 +16,8 @@ struct Module
 
 int main()
 {
-	//freopen("Input.txt", "r", stdin);
+	#pragma warning(disable:4996)
+	freopen("Input.txt", "r", stdin);
 	int nCase;
 	cin >> nCase;
 	for (size_t i = 0; i < nCase; i++)

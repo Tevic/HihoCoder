@@ -30,7 +30,8 @@ public:
 
 int main()
 {
-	//freopen("Input.txt", "r", stdin);
+	#pragma warning(disable:4996)
+	freopen("Input.txt", "r", stdin);
 	vector<TreeNode*> rootList;
 	for (size_t i = 0; i < 26; i++)
 	{

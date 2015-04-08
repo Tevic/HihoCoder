@@ -16,7 +16,8 @@ struct Point
 
 int main()
 {
-	//freopen("Input.txt", "r", stdin);
+	#pragma warning(disable:4996)
+	freopen("Input.txt", "r", stdin);
 	const int MAX_VALUE = 2147483647;
 	int N;
 	int X, Y;
