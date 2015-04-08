@@ -1,28 +1,28 @@
 #include "../Head.h"
 
 
-void Up(vector<vector<int> > &board,int &i,int &j,int &bX,int &bY)
+void Up(vector<vector<int> > &board, int &i, int &j, int &bX, int &bY)
 {
 	int N = board[0].size();
 	int M = board.size();
-	if (i-1>=0&&board[i-1][j]!=4)
+	if (i - 1 >= 0 && board[i - 1][j] != 4)
 	{
-		if (board[i-1][j]==3)
+		if (board[i - 1][j] == 3)
 		{
-			if (i-2>=0)
+			if (i - 2 >= 0)
 			{
 				board[i - 2][j] = 3;
 				board[i - 1][j] = 1;
 				board[i][j] = 0;
-				i = i - 1;
-				bX = i - 2;
+				i--;
+				bX--;
 			}
 		}
 		else
 		{
 			board[i - 1][j] = 1;
 			board[i][j] = 0;
-			i = i - 1;
+			i--;
 		}
 	}
 }
@@ -30,7 +30,7 @@ void Down(vector<vector<int> > &board, int &i, int &j, int &bX, int &bY)
 {
 	int N = board[0].size();
 	int M = board.size();
-	if (i + 1 <M && board[i + 1][j] != 4)
+	if (i + 1 < M && board[i + 1][j] != 4)
 	{
 		if (board[i + 1][j] == 3)
 		{
@@ -39,8 +39,8 @@ void Down(vector<vector<int> > &board, int &i, int &j, int &bX, int &bY)
 				board[i + 2][j] = 3;
 				board[i + 1][j] = 1;
 				board[i][j] = 0;
-				i = i + 1;
-				bX = i + 1;
+				i++;
+				bX++;
 			}
 		}
 		else
@@ -64,15 +64,15 @@ void Left(vector<vector<int> > &board, int &i, int &j, int &bX, int &bY)
 				board[i][j - 2] = 3;
 				board[i][j - 1] = 1;
 				board[i][j] = 0;
-				j = j - 1;
-				bY = j - 2;
+				j--;
+				bY--;
 			}
 		}
 		else
 		{
 			board[i][j - 1] = 1;
 			board[i][j] = 0;
-			j = j - 1;
+			j--;
 		}
 	}
 }
@@ -89,15 +89,15 @@ void Right(vector<vector<int> > &board, int &i, int &j, int &bX, int &bY)
 				board[i][j + 2] = 3;
 				board[i][j + 1] = 1;
 				board[i][j] = 0;
-				j = j + 1;
-				bY = j + 2;
+				j++;
+				bY++;
 			}
 		}
 		else
 		{
 			board[i][j + 1] = 1;
 			board[i][j] = 0;
-			j = j + 1;
+			j++;
 		}
 	}
 }
@@ -105,10 +105,10 @@ void Right(vector<vector<int> > &board, int &i, int &j, int &bX, int &bY)
 int main()
 {
 	freopen("Input.txt", "r", stdin);
-	
+
 	int N, M, S;
 	cin >> N >> M >> S;
-	vector<vector<int> > board(M,vector<int>(N,0));
+	vector<vector<int> > board(M, vector<int>(N, 0));
 	int X, Y;
 	int bX, bY;
 	int startX, startY;
@@ -121,7 +121,7 @@ int main()
 			char val;
 			cin >> val;
 			board[i][j] = val - '0';
-			if (board[i][j]==2)
+			if (board[i][j] == 2)
 			{
 				targetX = i;
 				targetY = j;
@@ -147,63 +147,54 @@ int main()
 		bY = boxY;
 		int nStep;
 		cin >> nStep;
+		bool flag = false;
 		for (size_t i = 0; i < nStep; i++)
 		{
-			bool flag=false;
+			if (flag)
+			{
+				break;
+			}
 			char chDirection;
 			cin >> chDirection;
 			switch (chDirection)
 			{
 			case 'l':
 			{
-				if (!flag)
+				Left(board, X, Y, bX, bY);
+				if (bX == targetX&&bY == targetY)
 				{
-					Left(board, X, Y);
-					if (ToDest(board))
-					{
-						flag = true;
-					}
-					break;
+					flag = true;
 				}
-
+				break;
 			}
 			case 'r':
 			{
-				if (!flag)
+				Right(board, X, Y, bX, bY);
+				if (bX == targetX&&bY == targetY)
 				{
-					Right(board, X, Y);
-					if (ToDest(board))
-					{
-						flag = true;
-					}
-					break;
+					flag = true;
 				}
+				break;
 
 			}
 			case 'u':
 			{
-				if (!flag)
+				Up(board, X, Y, bX, bY);
+				if (bX == targetX&&bY == targetY)
 				{
-					Up(board, X, Y);
-					if (ToDest(board))
-					{
-						flag = true;
-					}
-					break;
+					flag = true;
 				}
+				break;
 
 			}
 			case 'd':
 			{
-				if (!flag)
+				Down(board, X, Y, bX, bY);
+				if (bX == targetX&&bY == targetY)
 				{
-					Down(board, X, Y);
-					if (ToDest(board))
-					{
-						flag = true;
-					}
-					break;
+					flag = true;
 				}
+				break;
 
 			}
 			default:
@@ -211,7 +202,7 @@ int main()
 			}
 		}
 
-		if (ToDest(board))
+		if (flag)
 		{
 			cout << "YES" << endl;
 		}
@@ -223,7 +214,7 @@ int main()
 		{
 			for (size_t j = 0; j < N; j++)
 			{
-				if (board[i][j]!=4)
+				if (board[i][j] != 4)
 				{
 					board[i][j] = 0;
 				}
