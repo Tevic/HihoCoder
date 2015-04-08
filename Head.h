@@ -1,3 +1,5 @@
+#pragma warning(disable:4996)
+
 #include <stdio.h>
 #include <vector>
 #include <string>
@@ -5,5 +7,7 @@
 #include <iostream>
 #include <queue>
 #include <map>
-#include <hash_map>
+#include <unordered_map>
 using namespace std;
+
+

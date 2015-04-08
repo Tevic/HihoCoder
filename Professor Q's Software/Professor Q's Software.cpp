@@ -8,7 +8,6 @@ struct Module
 
 int main()
 {
-	#pragma warning(disable:4996)
 	freopen("Input.txt", "r", stdin);
 	int nCase;
 	cin >> nCase;

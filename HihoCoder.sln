@@ -16,6 +16,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{6507E1
 		Head.h = Head.h
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ABCTest", "ABCTest\ABCTest.vcxproj", "{801E3D1A-32F3-4A10-93CD-2545BE641831}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PushBox", "PushBox\PushBox.vcxproj", "{D92E96A2-81D7-4E3B-9B02-B0C393A44D63}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -38,6 +42,14 @@ Global
 		{0A3A9238-14D7-4C6E-9AAC-8E31961FBC47}.Debug|Win32.Build.0 = Debug|Win32
 		{0A3A9238-14D7-4C6E-9AAC-8E31961FBC47}.Release|Win32.ActiveCfg = Release|Win32
 		{0A3A9238-14D7-4C6E-9AAC-8E31961FBC47}.Release|Win32.Build.0 = Release|Win32
+		{801E3D1A-32F3-4A10-93CD-2545BE641831}.Debug|Win32.ActiveCfg = Debug|Win32
+		{801E3D1A-32F3-4A10-93CD-2545BE641831}.Debug|Win32.Build.0 = Debug|Win32
+		{801E3D1A-32F3-4A10-93CD-2545BE641831}.Release|Win32.ActiveCfg = Release|Win32
+		{801E3D1A-32F3-4A10-93CD-2545BE641831}.Release|Win32.Build.0 = Release|Win32
+		{D92E96A2-81D7-4E3B-9B02-B0C393A44D63}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D92E96A2-81D7-4E3B-9B02-B0C393A44D63}.Debug|Win32.Build.0 = Debug|Win32
+		{D92E96A2-81D7-4E3B-9B02-B0C393A44D63}.Release|Win32.ActiveCfg = Release|Win32
+		{D92E96A2-81D7-4E3B-9B02-B0C393A44D63}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

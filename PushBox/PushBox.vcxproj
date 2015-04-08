@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{801E3D1A-32F3-4A10-93CD-2545BE641831}</ProjectGuid>
+    <ProjectGuid>{D92E96A2-81D7-4E3B-9B02-B0C393A44D63}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>ABCTest</RootNamespace>
+    <RootNamespace>PushBox</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -78,7 +78,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ABCTest.cpp" />
+    <ClCompile Include="PushBox.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Input.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
