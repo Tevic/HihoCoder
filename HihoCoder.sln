@@ -11,6 +11,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Magic Box", "Magic Box\Magi
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TrieTree", "TrieTree\TrieTree.vcxproj", "{0A3A9238-14D7-4C6E-9AAC-8E31961FBC47}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{6507E17C-EABB-49D7-83E8-5CC53D5A9D13}"
+	ProjectSection(SolutionItems) = preProject
+		Head.h = Head.h
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
