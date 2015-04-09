@@ -20,6 +20,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ABCTest", "ABCTest\ABCTest.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PushBox", "PushBox\PushBox.vcxproj", "{D92E96A2-81D7-4E3B-9B02-B0C393A44D63}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KMP", "KMP\KMP.vcxproj", "{3E7A630C-5388-4E2A-9703-4B6BCC93FB58}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -50,6 +52,10 @@ Global
 		{D92E96A2-81D7-4E3B-9B02-B0C393A44D63}.Debug|Win32.Build.0 = Debug|Win32
 		{D92E96A2-81D7-4E3B-9B02-B0C393A44D63}.Release|Win32.ActiveCfg = Release|Win32
 		{D92E96A2-81D7-4E3B-9B02-B0C393A44D63}.Release|Win32.Build.0 = Release|Win32
+		{3E7A630C-5388-4E2A-9703-4B6BCC93FB58}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3E7A630C-5388-4E2A-9703-4B6BCC93FB58}.Debug|Win32.Build.0 = Debug|Win32
+		{3E7A630C-5388-4E2A-9703-4B6BCC93FB58}.Release|Win32.ActiveCfg = Release|Win32
+		{3E7A630C-5388-4E2A-9703-4B6BCC93FB58}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
