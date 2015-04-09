@@ -141,6 +141,7 @@ int main()
 			if (bX==targetX&&bY==targetY)
 			{
 				bToDest = true;
+				break;
 			}
 		}
 
