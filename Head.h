@@ -1,4 +1,5 @@
 #pragma warning(disable:4996)
+#define DEBUG_MODE
 
 #include <stdio.h>
 #include <vector>

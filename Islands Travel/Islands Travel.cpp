@@ -8,7 +8,9 @@ struct Point
 
 int main()
 {
+	#ifdef DEBUG_MODE
 	freopen("Input.txt", "r", stdin);
+	#endif // DEBUG_MODE
 	const int MAX_VALUE = 2147483647;
 	int N;
 	int X, Y;
@@ -19,7 +21,7 @@ int main()
 	vector<vector<int> > graph(N, vector<int>(N));
 	for (size_t i = 0; i < N; i++)
 	{
-		Point* pt=new Point();
+		Point* pt = new Point();
 		cin >> pt->X;
 		cin >> pt->Y;
 		vPoints.push_back(pt);
@@ -28,7 +30,7 @@ int main()
 	{
 		for (size_t j = 0; j < N; j++)
 		{
-			if (i==j)
+			if (i == j)
 			{
 				graph[i][j] = 0;
 			}
@@ -36,7 +38,7 @@ int main()
 			{
 				int v1 = abs(vPoints[i]->X - vPoints[j]->X);
 				int v2 = abs(vPoints[i]->Y - vPoints[j]->Y);
-				graph[i][j] = v1<v2?v1:v2;
+				graph[i][j] = v1 < v2 ? v1 : v2;
 			}
 		}
 	}

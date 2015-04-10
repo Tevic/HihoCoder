@@ -8,7 +8,9 @@ struct Module
 
 int main()
 {
-	freopen("Input.txt", "r", stdin);
+	#ifdef DEBUG_MODE
+		freopen("Input.txt", "r", stdin);
+	#endif // DEBUG_MODE
 	int nCase;
 	cin >> nCase;
 	for (size_t i = 0; i < nCase; i++)

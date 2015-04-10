@@ -91,7 +91,9 @@ void Move(vector<vector<int> > &board, char chDirection, int &pX, int &pY, int &
 
 int main()
 {
+#ifdef DEBUG_MODE
 	freopen("Input.txt", "r", stdin);
+#endif // DEBUG_MODE
 
 	int N, M, S;
 	cin >> N >> M >> S;
