@@ -22,9 +22,7 @@ public:
 
 int main()
 {
-#ifdef DEBUG_MODE
-	freopen("Input.txt", "r", stdin);
-#endif // DEBUG_MODE
+	ReOpenText();
 	vector<TreeNode*> rootList;
 	for (size_t i = 0; i < 26; i++)
 	{

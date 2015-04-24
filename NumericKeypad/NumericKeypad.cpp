@@ -65,9 +65,7 @@ bool IsValid(int iNum)
 
 int main()
 {
-#ifdef DEBUG_MODE
-	freopen("Input.txt", "r", stdin);
-#endif // DEBUG_MODE
+	ReOpenText();
 	int nCase;
 	cin >> nCase;
 	for (size_t i = 0; i < nCase; i++)
@@ -88,9 +86,7 @@ int main()
 
 //int main()
 //{
-//#ifdef DEBUG_MODE
-//	freopen("Input.txt", "r", stdin);
-//#endif // DEBUG_MODE
+//	ReOpenText();
 //	int nCase;
 //	cin >> nCase;
 //	for (size_t i = 0; i < nCase; i++)

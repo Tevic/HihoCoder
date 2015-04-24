@@ -23,9 +23,7 @@ void GetNext(string p, vector<int> &next)
 
 int main()
 {
-	#ifdef DEBUG_MODE
-	freopen("Input.txt", "r", stdin);
-	#endif // DEBUG_MODE
+	ReOpenText();
 	int nQuery;
 	cin >> nQuery;
 	for (size_t k = 0; k < nQuery; k++)
@@ -98,9 +96,7 @@ int main()
 //}
 
 //int main(){
-//	#ifdef DEBUG_MODE
-//	freopen("Input.txt", "r", stdin);
-//	#endif // DEBUG_MODE
+//	ReOpenText();
 //	string t, p;
 //	int n;
 //	scanf("%d", &n);

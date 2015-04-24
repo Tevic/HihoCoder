@@ -8,9 +8,7 @@ struct Point
 
 int main()
 {
-	#ifdef DEBUG_MODE
-	freopen("Input.txt", "r", stdin);
-	#endif // DEBUG_MODE
+	ReOpenText();
 	const int MAX_VALUE = 2147483647;
 	int N;
 	int X, Y;

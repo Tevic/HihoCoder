@@ -91,10 +91,7 @@ void Move(vector<vector<int> > &board, char chDirection, int &pX, int &pY, int &
 
 int main()
 {
-#ifdef DEBUG_MODE
-	freopen("Input.txt", "r", stdin);
-#endif // DEBUG_MODE
-
+	ReOpenText();
 	int N, M, S;
 	cin >> N >> M >> S;
 	vector<vector<int> > board(M, vector<int>(N, 0));
@@ -140,7 +137,7 @@ int main()
 			char chDirection;
 			cin >> chDirection;
 			Move(board, chDirection, pX, pY, bX, bY);
-			if (bX==targetX&&bY==targetY)
+			if (bX == targetX&&bY == targetY)
 			{
 				bToDest = true;
 				break;

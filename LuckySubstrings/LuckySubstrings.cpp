@@ -27,9 +27,7 @@ bool isFi(string s)
 
 int main()
 {
-#ifdef DEBUG_MODE
-	freopen("Input.txt", "r", stdin);
-#endif // DEBUG_MODE
+	ReOpenText();
 	vector<string> res;
 	string s;
 	cin >> s;

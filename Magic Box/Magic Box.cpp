@@ -21,9 +21,7 @@ bool MatchDiff(vector<int>& inputDiff)
 
 int main()
 {
-	#ifdef DEBUG_MODE
-	freopen("Input.txt", "r", stdin);
-	#endif // DEBUG_MODE
+	ReOpenText();
 	vector<int> inputDiff(3);
 	for (size_t i = 0; i < 3; i++)
 	{

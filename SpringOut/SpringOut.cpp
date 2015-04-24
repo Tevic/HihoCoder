@@ -42,41 +42,39 @@ void Vote(vector<vector<int> >& vPreferList, vector<bool>& vSuccessList)
 
 int main()
 {
-	#ifdef DEBUG_MODE
-		freopen("Input.txt", "r", stdin);
-	#endif // DEBUG_MODE
-		int nPeople;
-		int nCandidate;
-		cin >> nPeople >> nCandidate;
-		vector<vector<int> > vPreferList(nPeople, vector<int>(nCandidate + 1));
-		vector<bool> vSuccessList(nCandidate + 1);
-		vSuccessList[nCandidate] = true;
-		for (size_t i = 0; i < nPeople; i++)
+	ReOpenText();
+	int nPeople;
+	int nCandidate;
+	cin >> nPeople >> nCandidate;
+	vector<vector<int> > vPreferList(nPeople, vector<int>(nCandidate + 1));
+	vector<bool> vSuccessList(nCandidate + 1);
+	vSuccessList[nCandidate] = true;
+	for (size_t i = 0; i < nPeople; i++)
+	{
+		for (size_t j = 0; j < nCandidate+1; j++)
 		{
-			for (size_t j = 0; j < nCandidate+1; j++)
-			{
-				cin>>vPreferList[i][j];
-			}
+			cin>>vPreferList[i][j];
 		}
-		Vote(vPreferList, vSuccessList);
-		bool iSelected=0;
-		for (size_t i = 0; i < vSuccessList.size()-1; i++)
+	}
+	Vote(vPreferList, vSuccessList);
+	bool iSelected=0;
+	for (size_t i = 0; i < vSuccessList.size()-1; i++)
+	{
+		if (vSuccessList[i])
 		{
-			if (vSuccessList[i])
-			{
-				iSelected = i + 1;
-				break;
-			}
+			iSelected = i + 1;
+			break;
 		}
-		if (iSelected!=0)
-		{
-			cout << iSelected << endl;
-		}
-		else
-		{
-			cout << "otaku" << endl;
-		}
-		return 0;
+	}
+	if (iSelected!=0)
+	{
+		cout << iSelected << endl;
+	}
+	else
+	{
+		cout << "otaku" << endl;
+	}
+	return 0;
 }
 
 //int N, K;
@@ -147,10 +145,7 @@ int main()
 //
 //int main()
 //{
-//#ifdef DEBUG_MODE
-//	freopen("Input.txt", "r", stdin);
-//#endif // DEBUG_MODE
-//
+//	ReOpenText();
 //	cin >> N >> K;
 //	int **p = new int *[N];
 //	for (int i = 0; i < K + 1; i++)
