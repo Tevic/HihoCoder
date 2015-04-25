@@ -1,6 +1,6 @@
 #include "..\Head.h"
 
-bool HasPreferThanA(vector<vector<int> >& vPreferList, int iPeople, int A, vector<bool>& vSuccessList)
+bool HasPreferThanASuccess(vector<vector<int> >& vPreferList, int iPeople, int A, vector<bool>& vSuccessList)
 {
 	for (size_t i = 0; i < vPreferList[0].size(); i++)
 	{
@@ -24,10 +24,7 @@ void Vote(vector<vector<int> >& vPreferList, vector<bool>& vSuccessList)
 		int nCountAgree = 0;
 		for (size_t j = 0; j < nPeople; j++)
 		{
-			if (HasPreferThanA(vPreferList, j, i, vSuccessList))
-			{
-			}
-			else
+			if (!HasPreferThanASuccess(vPreferList, j, i, vSuccessList))
 			{
 				nCountAgree++;
 			}
