@@ -30,6 +30,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LuckySubstrings", "LuckySub
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SpringOut", "SpringOut\SpringOut.vcxproj", "{A703AF46-D111-4219-88C7-33D2F01AD515}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ColorTree", "ColorTree\ColorTree.vcxproj", "{95C37911-B34F-42BC-AAC3-D51A2AEB0083}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CountCards", "CountCards\CountCards.vcxproj", "{351F8B3B-9A5C-4E84-8851-B2C17CAB5722}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -80,6 +84,14 @@ Global
 		{A703AF46-D111-4219-88C7-33D2F01AD515}.Debug|Win32.Build.0 = Debug|Win32
 		{A703AF46-D111-4219-88C7-33D2F01AD515}.Release|Win32.ActiveCfg = Release|Win32
 		{A703AF46-D111-4219-88C7-33D2F01AD515}.Release|Win32.Build.0 = Release|Win32
+		{95C37911-B34F-42BC-AAC3-D51A2AEB0083}.Debug|Win32.ActiveCfg = Debug|Win32
+		{95C37911-B34F-42BC-AAC3-D51A2AEB0083}.Debug|Win32.Build.0 = Debug|Win32
+		{95C37911-B34F-42BC-AAC3-D51A2AEB0083}.Release|Win32.ActiveCfg = Release|Win32
+		{95C37911-B34F-42BC-AAC3-D51A2AEB0083}.Release|Win32.Build.0 = Release|Win32
+		{351F8B3B-9A5C-4E84-8851-B2C17CAB5722}.Debug|Win32.ActiveCfg = Debug|Win32
+		{351F8B3B-9A5C-4E84-8851-B2C17CAB5722}.Debug|Win32.Build.0 = Debug|Win32
+		{351F8B3B-9A5C-4E84-8851-B2C17CAB5722}.Release|Win32.ActiveCfg = Release|Win32
+		{351F8B3B-9A5C-4E84-8851-B2C17CAB5722}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

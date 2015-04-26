@@ -10,33 +10,33 @@ int main()
 {
 	ReOpenText();
 	int nCase;
-	cin >> nCase;
+	scanf("%d",&nCase);
 	for (size_t i = 0; i < nCase; i++)
 	{
 		int nModules, nSignals;
-		cin >> nModules >> nSignals;
+		scanf("%d %d", &nModules,&nSignals);
 		queue<int> signalQueue;
 		vector<Module*> moduleList;
 		vector<int> wakeUpTimes(nModules);
 		for (size_t i = 0; i < nSignals; i++)
 		{
 			int signal;
-			cin >> signal;
+			scanf("%d", &signal);
 			signalQueue.push(signal);
 		}
 		for (size_t i = 0; i < nModules; i++)
 		{			
 			Module* md = new Module();
 			int wakeUpSignal;
-			cin >> wakeUpSignal;
+			scanf("%d", &wakeUpSignal);
 			md->wakeUpSignal = wakeUpSignal;
 			wakeUpTimes[i]=0;
 			int countSend;
-			cin >> countSend;
+			scanf("%d", &countSend);
 			for (size_t i = 0; i < countSend; i++)
 			{
 				int signal;
-				cin >> signal;
+				scanf("%d", &signal);
 				md->sendSignal.push_back(signal);
 			}
 			moduleList.push_back(md);
@@ -64,8 +64,8 @@ int main()
 		}
 		for (size_t i = 0; i < wakeUpTimes.size(); i++)
 		{
-			cout << wakeUpTimes[i] << ' ';
+			printf("%d ", wakeUpTimes[i]);
 		}
-		cout << endl;
+		printf("\n");
 	}
 }
