@@ -1,7 +1,7 @@
 #pragma warning(disable:4996)
 #pragma once
-
 #define DEBUG_MODE
+
 #include <stdio.h>
 #include <vector>
 #include <string>

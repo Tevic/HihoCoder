@@ -34,6 +34,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ColorTree", "ColorTree\Colo
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CountCards", "CountCards\CountCards.vcxproj", "{351F8B3B-9A5C-4E84-8851-B2C17CAB5722}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ReversePair", "ReversePair\ReversePair.vcxproj", "{4C6FE2B1-5E3D-4C4E-AF86-C24E3E5B74C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -92,6 +94,10 @@ Global
 		{351F8B3B-9A5C-4E84-8851-B2C17CAB5722}.Debug|Win32.Build.0 = Debug|Win32
 		{351F8B3B-9A5C-4E84-8851-B2C17CAB5722}.Release|Win32.ActiveCfg = Release|Win32
 		{351F8B3B-9A5C-4E84-8851-B2C17CAB5722}.Release|Win32.Build.0 = Release|Win32
+		{4C6FE2B1-5E3D-4C4E-AF86-C24E3E5B74C4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4C6FE2B1-5E3D-4C4E-AF86-C24E3E5B74C4}.Debug|Win32.Build.0 = Debug|Win32
+		{4C6FE2B1-5E3D-4C4E-AF86-C24E3E5B74C4}.Release|Win32.ActiveCfg = Release|Win32
+		{4C6FE2B1-5E3D-4C4E-AF86-C24E3E5B74C4}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
