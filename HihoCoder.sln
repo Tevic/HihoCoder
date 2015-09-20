@@ -13,6 +13,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TrieTree", "TrieTree\TrieTr
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{6507E17C-EABB-49D7-83E8-5CC53D5A9D13}"
 	ProjectSection(SolutionItems) = preProject
+		Head.cpp = Head.cpp
 		Head.h = Head.h
 	EndProjectSection
 EndProject
@@ -49,6 +50,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "N5", "N5\N5.vcxproj", "{B8AF2664-4DF8-494E-882C-4C3F8A04408B}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "N6", "N6\N6.vcxproj", "{97B79637-D050-4073-9B4A-9248286782C8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyString", "MyString\MyString.vcxproj", "{802EB026-FE1E-4C38-97E3-2305B090EA47}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -198,6 +201,14 @@ Global
 		{97B79637-D050-4073-9B4A-9248286782C8}.Release|Win32.Build.0 = Release|Win32
 		{97B79637-D050-4073-9B4A-9248286782C8}.Release|x64.ActiveCfg = Release|x64
 		{97B79637-D050-4073-9B4A-9248286782C8}.Release|x64.Build.0 = Release|x64
+		{802EB026-FE1E-4C38-97E3-2305B090EA47}.Debug|Win32.ActiveCfg = Debug|Win32
+		{802EB026-FE1E-4C38-97E3-2305B090EA47}.Debug|Win32.Build.0 = Debug|Win32
+		{802EB026-FE1E-4C38-97E3-2305B090EA47}.Debug|x64.ActiveCfg = Debug|x64
+		{802EB026-FE1E-4C38-97E3-2305B090EA47}.Debug|x64.Build.0 = Debug|x64
+		{802EB026-FE1E-4C38-97E3-2305B090EA47}.Release|Win32.ActiveCfg = Release|Win32
+		{802EB026-FE1E-4C38-97E3-2305B090EA47}.Release|Win32.Build.0 = Release|Win32
+		{802EB026-FE1E-4C38-97E3-2305B090EA47}.Release|x64.ActiveCfg = Release|x64
+		{802EB026-FE1E-4C38-97E3-2305B090EA47}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
