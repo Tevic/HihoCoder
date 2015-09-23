@@ -45,13 +45,13 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "N5", "N5\N5.vcxproj", "{B8A
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "N6", "N6\N6.vcxproj", "{97B79637-D050-4073-9B4A-9248286782C8}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyClass", "MyString\MyString.vcxproj", "{802EB026-FE1E-4C38-97E3-2305B090EA47}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{614504D5-3C93-402D-8622-424F3903B2ED}"
 	ProjectSection(SolutionItems) = preProject
 		GlobalFunc.h = GlobalFunc.h
 		Head.h = Head.h
 	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyClass", "MyClass\MyClass.vcxproj", "{802EB026-FE1E-4C38-97E3-2305B090EA47}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
