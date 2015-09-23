@@ -1,11 +1,6 @@
-#include "..\Head.h"
+#include "../Head.h"
+#include "../GlobalFunc.h"
 
-
-
-#include <iostream>
-#include <vector>
-#include <algorithm>
-using namespace std;
 
 bool isFi(string s)
 {

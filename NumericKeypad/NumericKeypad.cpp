@@ -1,4 +1,5 @@
-#include "..\Head.h"
+#include "../Head.h"
+#include "../GlobalFunc.h"
 
 vector<vector<int> > toValid = 
 {

@@ -12,9 +12,10 @@
 #include <unordered_map>
 #include <unordered_set>
 #include <sstream>
+#include <stack>
 
 using namespace std;
 
-void ReOpenText();
+
 
 

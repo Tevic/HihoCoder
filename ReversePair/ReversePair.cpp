@@ -1,4 +1,5 @@
 #include "../Head.h"
+#include "../GlobalFunc.h"
 
 void MergeArray(vector<int>& vecList, int start, int mid, int end, long long & totalCount)
 {

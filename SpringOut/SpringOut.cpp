@@ -1,4 +1,5 @@
-#include "..\Head.h"
+#include "../Head.h"
+#include "../GlobalFunc.h"
 
 bool HasPreferThanASuccess(vector<vector<int> >& vPreferList, int iPeople, int A, vector<bool>& vSuccessList)
 {

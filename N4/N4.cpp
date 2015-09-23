@@ -1,10 +1,6 @@
 #include "../Head.h"
+#include "../GlobalFunc.h"
 
-
-#include<iostream>
-#include<vector>
-#include<stdlib.h>
-#include<queue>
 
 int judge(priority_queue<int> &choose, int &heros)
 {

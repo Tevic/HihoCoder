@@ -1,10 +1,6 @@
 #include "../Head.h"
+#include "../GlobalFunc.h"
 
-#include <iostream>
-#include <vector>
-#include <string>
-#include <stack>
-using namespace std;
 
 string Decompress(string temp)
 {

@@ -1,5 +1,5 @@
 #include "../Head.h"
-
+#include "../GlobalFunc.h"
 
 void genWeight(vector<int> &w, int n, int u, int v)
 {

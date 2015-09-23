@@ -1,5 +1,4 @@
 #include "MyString.h"
-#include "stdio.h"
 
 
 MyString::MyString() :data(new char[1]{ '\0' }) {}

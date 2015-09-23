@@ -1,4 +1,5 @@
 #include "../Head.h"
+#include "../GlobalFunc.h"
 
 bool DFS(vector<vector<int> > &vTree, vector<int> &vColor, vector<bool> &vVisited, int iNode)
 {

@@ -1,4 +1,5 @@
 #include "../Head.h"
+#include "../GlobalFunc.h"
 
 void GetNext(string p, vector<int> &next)
 {

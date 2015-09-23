@@ -1,5 +1,5 @@
 #include "../Head.h"
-
+#include "../GlobalFunc.h"
 
 void Move(vector<vector<int> > &board, char chDirection, int &pX, int &pY, int &bX, int &bY)
 {

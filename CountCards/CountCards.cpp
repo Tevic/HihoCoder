@@ -1,4 +1,5 @@
 #include "../Head.h"
+#include "../GlobalFunc.h"
 
 unsigned long long MAX_VALUE = 2 ^ 64;
 unsigned long long SUM = 0;
