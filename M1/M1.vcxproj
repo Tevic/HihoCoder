@@ -18,6 +18,12 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="Input.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Solution.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{0A6F4F23-7C5F-4AFA-9990-8144E62236E5}</ProjectGuid>
     <RootNamespace>M1</RootNamespace>
