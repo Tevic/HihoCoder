@@ -81,6 +81,33 @@ int judge(priority_queue<int> &choose, int &heros)
 	}
 	return group;
 }
+
+int GetCnt(priority_queue<int,vector<int>,greater<int>> &choose, int &heros)
+{
+	int count = 0;
+	while (choose.size()>=3)
+	{
+		int iP1 = choose.top();
+		choose.pop();
+		int iP2 = choose.top();
+		choose.pop();
+		iP2-=iP1;
+		int iP3 = choose.top();
+		choose.pop();
+		iP3-=iP1;
+		if (iP2>0)
+		{
+			choose.push(iP2);
+		}
+		if (iP3>0)
+		{
+			choose.push(iP3);
+		}
+		count+=iP1;
+	}
+	return count /2;
+}
+
 int main()
 {
 	ReOpenText();
@@ -92,13 +119,13 @@ int main()
 		num--;
 		int heros;
 		cin >> heros;
-		priority_queue<int> choose;
+		priority_queue<int, vector<int>, greater<int>> choose;
 		for (int i = 0; i < heros; i++)
 		{
 			int t;
 			cin >> t;
 			choose.push(t);
 		}
-		cout << judge(choose, heros) << endl;
+		cout << GetCnt(choose, heros) << endl;
 	}
 }

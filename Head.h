@@ -17,6 +17,8 @@
 #include <sstream>
 #include <stack>
 #include <iomanip>
+#include <functional>
+
 using namespace std;
 
 
