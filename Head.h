@@ -2,7 +2,7 @@
 #pragma once
 #define DEBUG_MODE
 
-#include <stdio.h>
+#include <cstdio>
 #include <vector>
 #include <string>
 #include <algorithm>
