@@ -10,7 +10,7 @@ void MergeArray(vector<int>& arr, int start, int mid, int end)
 	int* tmp = new int[end - start + 1];
 	while (i <= m&&j <= n)
 	{
-		if (arr[i]<arr[j])
+		if (arr[i] < arr[j])
 			tmp[k++] = arr[i++];
 		else
 			tmp[k++] = arr[j++];
@@ -19,7 +19,7 @@ void MergeArray(vector<int>& arr, int start, int mid, int end)
 		tmp[k++] = arr[i++];
 	while (j <= n)
 		tmp[k++] = arr[j++];
-	for (int i = 0; i< end - start + 1; i++)
+	for (int i = 0; i < end - start + 1; i++)
 	{
 		arr[start + i] = tmp[i];
 	}
@@ -28,7 +28,7 @@ void MergeArray(vector<int>& arr, int start, int mid, int end)
 
 void MergeSort(vector<int>& arr, int left, int right)
 {
-	if (left<right)
+	if (left < right)
 	{
 		int mid = (left + right) / 2;
 		MergeSort(arr, left, mid);
@@ -44,7 +44,7 @@ int main(int argc, char* argv[])
 {
 	vector<int> arr = { 5, 4, 3, 2, 1, 8 };
 	MergeSort(arr, 0, 5);
-	for (int i = 0; i<6; i++)
+	for (int i = 0; i < 6; i++)
 	{
 		cout << arr[i] << " ";
 	}
