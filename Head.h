@@ -2,9 +2,9 @@
 #pragma once
 #define DEBUG_MODE
 
-#include <cstdio>
 #include <unordered_map>
 #include <unordered_set>
+#include <cstdio>
 #include <vector>
 #include <string>
 #include <algorithm>

@@ -55,7 +55,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{614504
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyClass", "MyClass\MyClass.vcxproj", "{802EB026-FE1E-4C38-97E3-2305B090EA47}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BaiduProblems", "BaiduProblems\BaiduProblems.vcxproj", "{7B1BAD22-5E56-40FA-A5F6-48D64FDC7A2F}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BaiduTest", "BaiduProblems\BaiduProblems.vcxproj", "{7B1BAD22-5E56-40FA-A5F6-48D64FDC7A2F}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "M1", "M1\M1.vcxproj", "{0A6F4F23-7C5F-4AFA-9990-8144E62236E5}"
 EndProject
@@ -64,6 +64,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "M3", "M3\M3.vcxproj", "{CBD060F2-3BF4-458E-8F4F-AF9C0CD890B1}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "M4", "M4\M4.vcxproj", "{B8C8731A-BAB7-4938-81AD-73B3A31C632C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SAPTest", "SAPTest\SAPTest.vcxproj", "{235F17A3-36D4-49E5-ACA1-D9AF14F1AB82}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -261,6 +263,14 @@ Global
 		{B8C8731A-BAB7-4938-81AD-73B3A31C632C}.Release|Win32.Build.0 = Release|Win32
 		{B8C8731A-BAB7-4938-81AD-73B3A31C632C}.Release|x64.ActiveCfg = Release|x64
 		{B8C8731A-BAB7-4938-81AD-73B3A31C632C}.Release|x64.Build.0 = Release|x64
+		{235F17A3-36D4-49E5-ACA1-D9AF14F1AB82}.Debug|Win32.ActiveCfg = Debug|Win32
+		{235F17A3-36D4-49E5-ACA1-D9AF14F1AB82}.Debug|Win32.Build.0 = Debug|Win32
+		{235F17A3-36D4-49E5-ACA1-D9AF14F1AB82}.Debug|x64.ActiveCfg = Debug|x64
+		{235F17A3-36D4-49E5-ACA1-D9AF14F1AB82}.Debug|x64.Build.0 = Debug|x64
+		{235F17A3-36D4-49E5-ACA1-D9AF14F1AB82}.Release|Win32.ActiveCfg = Release|Win32
+		{235F17A3-36D4-49E5-ACA1-D9AF14F1AB82}.Release|Win32.Build.0 = Release|Win32
+		{235F17A3-36D4-49E5-ACA1-D9AF14F1AB82}.Release|x64.ActiveCfg = Release|x64
+		{235F17A3-36D4-49E5-ACA1-D9AF14F1AB82}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
