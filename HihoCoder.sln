@@ -67,6 +67,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "M4", "M4\M4.vcxproj", "{B8C
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SAPTest", "SAPTest\SAPTest.vcxproj", "{235F17A3-36D4-49E5-ACA1-D9AF14F1AB82}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DidiTest", "DidiTest\DidiTest.vcxproj", "{1ADD78B2-4735-436B-906E-B82025C04298}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -271,6 +273,14 @@ Global
 		{235F17A3-36D4-49E5-ACA1-D9AF14F1AB82}.Release|Win32.Build.0 = Release|Win32
 		{235F17A3-36D4-49E5-ACA1-D9AF14F1AB82}.Release|x64.ActiveCfg = Release|x64
 		{235F17A3-36D4-49E5-ACA1-D9AF14F1AB82}.Release|x64.Build.0 = Release|x64
+		{1ADD78B2-4735-436B-906E-B82025C04298}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1ADD78B2-4735-436B-906E-B82025C04298}.Debug|Win32.Build.0 = Debug|Win32
+		{1ADD78B2-4735-436B-906E-B82025C04298}.Debug|x64.ActiveCfg = Debug|x64
+		{1ADD78B2-4735-436B-906E-B82025C04298}.Debug|x64.Build.0 = Debug|x64
+		{1ADD78B2-4735-436B-906E-B82025C04298}.Release|Win32.ActiveCfg = Release|Win32
+		{1ADD78B2-4735-436B-906E-B82025C04298}.Release|Win32.Build.0 = Release|Win32
+		{1ADD78B2-4735-436B-906E-B82025C04298}.Release|x64.ActiveCfg = Release|x64
+		{1ADD78B2-4735-436B-906E-B82025C04298}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
