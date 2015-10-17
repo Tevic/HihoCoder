@@ -78,6 +78,7 @@
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -120,10 +121,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MaxQueue.cpp" />
+    <ClCompile Include="MaxStack.cpp" />
     <ClCompile Include="MemoryPool.cpp" />
     <ClCompile Include="MyString.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="MaxQueue.h" />
+    <ClInclude Include="MaxStack.h" />
     <ClInclude Include="MemoryPool.h" />
     <ClInclude Include="MyString.h" />
   </ItemGroup>
